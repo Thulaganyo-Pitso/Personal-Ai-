@@ -43,3 +43,4 @@ py app.py
 - Make sure Ollama is running in the background before launching the app
 - You need a CSS file named cool.css in the same folder (included in repo)
 - Do not close the Ollama terminal while using the app
+## HEAVILY INSPIRED BY Jie Jehn "Create Your Own YouTube AI Summarizer (& Transcript Downloader) Using Python and PyQt6"
