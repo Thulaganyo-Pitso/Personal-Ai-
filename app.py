@@ -27,7 +27,7 @@ def extract_video_id(input_string):
 class AppWindow(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Thulaganyo's YT Summarizer")
+        self.setWindowTitle("Thulaganyo's chatbot/ YT summarizer")
         self.setWindowIcon(QIcon('transcription.png'))
         self.resize(900, 650)
         self.setStyleSheet('font-size: 14px;')
@@ -47,12 +47,12 @@ class AppWindow(QWidget):
         self.yt_tab = QWidget()
         self.yt_layout = QVBoxLayout()
         self.yt_tab.setLayout(self.yt_layout)
-        self.tabs.addTab(self.yt_tab, "YouTube")
+        self.tabs.addTab(self.yt_tab, "🎬 YouTube")
 
         self.chat_tab = QWidget()
         self.chat_layout = QVBoxLayout()
         self.chat_tab.setLayout(self.chat_layout)
-        self.tabs.addTab(self.chat_tab, "Chat with Beans")
+        self.tabs.addTab(self.chat_tab, "💬 Chat with Beans")
 
         self.status_bar = QStatusBar()
         self.layout_main.addWidget(self.status_bar)
@@ -219,7 +219,7 @@ class AppWindow(QWidget):
             return
         self.transcript_context = transcript
         self.chat_history = []
-        self.chat_display.setPlainText("Transcript loaded! You can now ask questions about it Pere.")
+        self.chat_display.setPlainText("✅ Transcript loaded! You can now ask questions about it Pere.")
         self.status_bar.showMessage('Transcript loaded into chat.')
 
     def send_chat(self):
